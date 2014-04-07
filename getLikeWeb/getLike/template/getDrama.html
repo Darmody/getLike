@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>权利的游戏第四季更新内容</title>
+</head>
+<body>
+     <h1>权利的游戏第四季更新内容</h1>
+     <table>
+         <tr>
+             <td><strong>集名</strong></td>
+            <td><strong>下载地址</strong></td>
+         </tr>
+         {% for drama in dramas %}
+            <tr>
+                <td>{{drama.episodeName}}</td>
+                <td><a href='{{ drama.downloadLink }}'>点我啊，点我啊</a></td>
+
+            </tr>
+        {% endfor %}
+     </table>
+</body>
+</html>
